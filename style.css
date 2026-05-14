@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 600px;
+    list-style-type: none;
+}
+.logo{
+    height: 70px;
+}
+.res-card{
+    height: 400px;
+    width: 200px;
+    border: 2px solid grey;
+    text-align: center;
+}
+.res-card:hover{
+    box-shadow: 0.8px 0.4px;
+}
+.res-img{
+    height: 200px;
+    width: 150px;
+}
+.body{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}

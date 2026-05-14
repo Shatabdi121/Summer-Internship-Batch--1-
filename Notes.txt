@@ -1,0 +1,25 @@
+What is React ?
+ React is a Library. (JavaScript).
+
+CDN: - Content Delivery Networ
+
+Bundler: Parcel Babel Vite RollUp
+
+
+JSX: JavaScript XML
+// JSX -> JavaScript -> Object -> HTML
+
+
+Component: 
+
+Functonal  
+Class 
+
+
+Props
+
+
+Food Order App
+Navbar:->Logo  Home About Cart Login Services Search Bar+Button
+Main
+Footer
