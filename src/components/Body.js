@@ -16,7 +16,6 @@ const Body = () => {
   return (
     <div className="container">
     <button className="filter-btn" onClick={topRes}>Top Rated Restaurent</button>
-    <button className="filter-btn">{a}</button>
       <div className="body">
       {
         dummyRes.map((res,id)=>{
