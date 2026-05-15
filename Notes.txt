@@ -23,3 +23,9 @@ Food Order App
 Navbar:->Logo  Home About Cart Login Services Search Bar+Button
 Main
 Footer
+
+
+HOOK: -
+useState
+useEffect
+useRef
