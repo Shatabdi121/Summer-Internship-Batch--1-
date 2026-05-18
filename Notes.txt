@@ -29,3 +29,11 @@ HOOK: -
 useState
 useEffect
 useRef
+
+
+
+Load -> API call -> Render
+
+Load ->Render ->  API call -> Render
+
+fetch  || XHR loading

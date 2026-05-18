@@ -57,3 +57,13 @@
     width: 100px;
     border-radius: 25px;
 }
+.shimmer-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.shimmer-card{
+    height: 250px;
+    width: 150px;
+    background-color: #f6efef;
+}
