@@ -10,13 +10,13 @@ const Body = () => {
     const [dummyRes,setDummyRes]=useState([])
     useEffect(()=>{
       fetchData()
-    })
+      console.log("useEffect called")
+    },[])
     
     //data fetch from API
     const fetchData = async() =>{
        const a= await fetch(SWIGGY_URL);
        const resData= await a.json();
-       console.log(resData)
        setDummyRes(resData?.data?.cards[1]?.card.card.gridElements.infoWithStyle.restaurants)
 1    }
 

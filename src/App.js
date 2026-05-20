@@ -3,16 +3,41 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import ResCard from "./components/ResCard";
 import Body from "./components/Body";
-
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
+import About from "./components/About";
+import Error from "./components/Error";
+import Offer from "./components/Offer";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Body />
+      <Outlet />
     </div>
   );
 };
 
+const routingConfig = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children:[
+      {
+        path: "/",
+        element: <Body />,  
+      },
+       {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/offers",
+        element: <Offer />,
+      },
+    ]
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<RouterProvider router={routingConfig} />);

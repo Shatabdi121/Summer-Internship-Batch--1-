@@ -37,3 +37,10 @@ Load -> API call -> Render
 Load ->Render ->  API call -> Render
 
 fetch  || XHR loading
+
+
+
+Routing
+
+path :  /offers
+element : <Offer />
