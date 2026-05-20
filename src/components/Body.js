@@ -3,6 +3,7 @@ import { SWIGGY_URL } from "../utils/MockData";
 import ResCard from "./ResCard";
 import { useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 
 const Body = () => {
@@ -38,8 +39,9 @@ const Body = () => {
 <div className="body">
       {
         dummyRes.map((res,id)=>{
+          console.log(res)
             return(
-                <ResCard resData={res} key={id} />
+               <Link to={"/menu/"+res.info.id} key={res.info.id}> <ResCard resData={res}  /></Link>
             )
         })
       }

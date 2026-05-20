@@ -67,3 +67,8 @@
     width: 150px;
     background-color: #f6efef;
 }
+.resMenu{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
