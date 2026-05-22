@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import User from './User'
 
-const About = () => {
-  return (
-    <div>
-      <h1>About Us</h1>
-      <p>Welcome to our restaurant!</p>
-    </div>
-  )
+import React, { Component } from 'react'
+
+export default class About extends Component {
+constructor(){
+  super()
+  console.log("parent Constructor")
 }
 
-export default About
+  render() {
+    console.log("parent Render")
+    return (
+      <div>
+       <h1>About Us</h1>
+       <p>Welcome to our restaurant!</p>
+       <User   name="abcd" age={100}/>
+    </div>
+    )
+  }
+}
+
+
