@@ -1,8 +1,11 @@
 import React from "react";
 import { logoUrl } from "../utils/MockData";
 import { Link } from "react-router";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
+  const userStatus=useOnlineStatus()
+
   return (
     <div className="header">
       <img
@@ -10,6 +13,7 @@ const Header = () => {
         className="logo"
       />
       <ul className="nav">
+        <li className="nav-items">Online Status {userStatus?"✅":"🔴"}</li>
         <li className="nav-items"><Link to="/">Home</Link></li>
         <li className="nav-items"><Link to="/about">About</Link></li>
         <li className="nav-items"><Link to="/offers">Offers</Link></li>

@@ -8,7 +8,6 @@ console.log(err)
   return (
     <div>
       <h1>We will be back soon!</h1>
-      <h3>{err.error.message}</h3>
     </div>
   )
 }
